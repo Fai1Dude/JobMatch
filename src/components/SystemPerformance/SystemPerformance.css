@@ -1,0 +1,197 @@
+/* SystemPerformance.css */
+
+.system-performance {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  /* Banner Section */
+  .banner-container {
+    width: 100%;
+    height: 150px;
+    background-color: #2B3147;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+  }
+  
+  /* Main Grid for Performance Sections */
+  .performance-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Each Performance Section Styling */
+  .performance-section {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  body.dark-mode .performance-section {
+    background-color: #333;
+
+  }
+
+  
+  /* Align Application Usage and Most Applications Applied Side by Side */
+  .application-usage-section,
+  .most-applications-section {
+    flex: 1 1 48%;
+    max-width: 48%;
+    height: 350px; /* Adjusted height for balance */
+  }
+  
+  /* Full-Width Application Activity Section */
+  .application-activity-section {
+    flex: 1 1 100%;
+    max-width: 100%;
+    height: 300px; /* Increased height for better visibility */
+    margin-top: 10px;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: 1.1em;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .download-report {
+    color: #FB923C;
+    cursor: pointer;
+    font-size: 0.85em;
+  }
+  
+  /* Enlarged Application Usage Styling */
+  .application-usage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Increased gap for better readability */
+  }
+  
+  .application-usage canvas {
+    max-width: 180px; /* Increased chart size */
+    max-height: 180px;
+  }
+  
+  .usage-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Smaller gap between dot and text */
+    text-align: center;
+  }
+
+  /* Updated styling for labels and numbers inside the section */
+  .stat-indicator-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .stat-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+    
+  .employers {
+    background-color: #4B5563;
+  }
+  
+  .admins {
+    background-color: #FB923C;
+  }
+  
+  .job-seekers {
+    background-color: #8B5CF6;
+  }
+  
+  .stat-label {
+    font-size: 0.9em;
+    color: #6B7280;
+    text-align: center;
+  }
+  
+.stat-number-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+}  
+.stat-number {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #4B5563;
+    text-align: center;
+    padding-top: 5px;
+  }  
+  /* Most Applications Applied Styling */
+  .applications-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .application-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .applicant-name {
+    width: 80px;
+    color: #111827;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  
+  .application-progress {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+  }
+  
+  .progress-bar {
+    height: 6px;
+    background-color: #8B5CF6;
+    border-radius: 3px;
+  }
+  
+  .progress-percent {
+    font-size: 0.85em;
+    color: #8B5CF6;
+  }
+  
+  /* Application Activity Styling */
+  .application-activity-section canvas {
+    max-width: 100%;
+    height: 220px;
+  }
+  

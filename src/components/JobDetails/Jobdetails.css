@@ -1,0 +1,85 @@
+.job-detail {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .job-detail h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0A65CC;
+  }
+  
+  .job-detail p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .job-detail p strong {
+    color: #0A65CC;
+  }
+  
+  .job-detail .company-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .job-detail .company-info img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .job-detail .location,
+  .job-detail .salary {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .job-detail .description {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+  }
+  
+  .job-detail .button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .job-detail button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .job-detail button:first-of-type {
+    background-color: #0A65CC;
+    color: #fff;
+    border: none;
+  }
+  
+  .job-detail button:first-of-type:hover {
+    background-color: #084c9f;
+  }
+  
+  .job-detail button:last-of-type {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+  }
+  
+  .job-detail button:last-of-type:hover {
+    background-color: #ccc;
+  }
+  

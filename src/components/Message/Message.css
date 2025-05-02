@@ -1,0 +1,179 @@
+/* Light Mode (Default) */
+:root {
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --input-bg-color: #fff;
+  --input-border-color: #ccc;
+  --card-bg-color: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --button-bg-color: #007bff;
+  --button-hover-bg-color: #0056b3;
+  --recipient-bubble-bg-color: #007bff;
+  --recipient-bubble-text-color: #fff;
+  --accent-color: #63b3ed;
+  --avatar-color: #333;
+  --message-bg-color: #f9f9f9;
+  --message-text-color: #888;
+}
+
+/* Dark Mode */
+.dark-mode {
+  --background-color: #2d3748;
+  --text-color: #e2e8f0;
+  --input-bg-color: #4a5568;
+  --input-border-color: #4a5568;
+  --card-bg-color: #2d3748;
+  --shadow-color: rgba(255, 255, 255, 0.1);
+  --button-bg-color: #3182ce;
+  --button-hover-bg-color: #63b3ed;
+  --recipient-bubble-bg-color: #3182ce;
+  --recipient-bubble-text-color: #fff;
+  --accent-color: #63b3ed;
+  --avatar-color: #e2e8f0;
+  --message-bg-color: #2d3748;
+  --message-text-color: #cbd5e0;
+}
+
+/* General Styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.message-container {
+  display: flex;
+  gap: 369px;
+  width: auto;
+  height: auto;
+  background-color: var(--background-color);
+}
+
+.left-message {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Search bar styling */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#set {
+  align-self: center;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+}
+
+/* Message list styling */
+.message-list {
+  margin-bottom: 20px;
+}
+
+/* Message card styling */
+.message-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  margin-bottom: 10px;
+}
+
+.avatar {
+  font-size: 24px;
+  margin-right: 10px;
+  color: var(--avatar-color);
+}
+
+.message-info h4 {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.message-time {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--message-text-color);
+}
+
+/* Recipient Input and List */
+.recipient-input {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.recipient-list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+/* Recipient bubbles */
+.recipient-bubble {
+  background-color: var(--recipient-bubble-bg-color);
+  color: var(--recipient-bubble-text-color);
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Message Input Container Styling */
+.message-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.message-input {
+  display: flex;
+  gap: 10px;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid var(--input-border-color);
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+}
+
+.message-input button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Voice button */
+#voice {
+  background: none;
+  border: none;
+  font-size: 29px;
+  cursor: pointer;
+}
+
+/* Hover effects */
+.message-card:hover {
+  background-color: var(--button-hover-bg-color);
+}

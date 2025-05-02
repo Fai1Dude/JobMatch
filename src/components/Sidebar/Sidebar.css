@@ -1,0 +1,70 @@
+.sidebar {
+  width: 180px; /* Adjust width as needed */
+  background-color: #f8f9fa;
+  padding: 30px 20px; /* Adjust padding as needed */
+  height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin-top: -10px; /* Move text up */
+}
+
+.nav-links li {
+  margin-bottom: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+  font-weight: bold;
+}
+.nav-icon {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 20px; /* Adjust size as needed */
+}
+.nav-links .sign-out:hover {
+  color: red; /* Change text color to red */
+}
+
+.nav-links .sign-out:hover .nav-icon {
+  color: red; /* Change icon color to red */
+}
+
+body.dark-mode .sidebar {
+  background-color: #333;
+  border-right: 1px solid #444;
+}
+
+body.dark-mode .nav-links  {
+  color: #ddd;
+}
+
+body.dark-mode .nav-links li {
+  color: #ddd;
+}
+
+
+body.dark-mode .nav-links a {
+  color: #ddd;
+}
+
+body.dark-mode .nav-links a:hover {
+  color: #007bff;
+  font-weight: bold;
+}
+
+body.dark-mode .nav-links .sign-out:hover {
+  color: red; /* Change text color to red */
+}

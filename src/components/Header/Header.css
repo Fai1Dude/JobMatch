@@ -1,0 +1,667 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo_header {
+  width: 50px;
+  align-items: center;
+  height: 50px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Increased space between logo and profile icon */
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000; /* Placeholder color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+}
+  
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+  
+.right-section {
+  display: flex;
+  align-items: center;
+}
+  
+.right-section .icon {
+  font-size: 18px; /* Adjust size as needed */
+  margin-left: 15px;
+  cursor: pointer;
+  position: relative;
+}
+  
+.icon-dropdown {
+  margin-left: 5px; /* For spacing between icon and dropdown arrow */  
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+  
+.right-section .icon {
+  font-size: 18px; /* Adjust as needed */
+  margin-left: 15px;
+  cursor: pointer;
+}
+.icon {
+  cursor: pointer;
+  margin-right: 15px;
+}
+  
+.dropdown-menu {
+  position: absolute;
+  top: 50px; /* Adjust this value to position the menu under the bell icon */
+  right: 20px; /* Align with the bell icon */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  width: 300px; /* Adjust width as needed */
+  padding: 10px;/* Adjust width as needed */
+}
+  
+.dropdown-item {
+   margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .mode-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  body.dark-mode .header {
+    background-color: #444;
+  }
+  
+  body.dark-mode .dropdown-menu {
+    background-color: #555;
+    border-color: #444;
+  }
+  .mode-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .toggle-button {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-button.active {
+    background-color: #333;
+  }
+  
+  .toggle-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 3px;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-button.active .toggle-circle {
+    transform: translateX(25px); /* Move circle to the right */
+  }
+ 
+  
+  .dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+  }
+  
+  .arrow-icon {
+    transition: transform 0.3s;
+  }
+  
+  .arrow-icon.open {
+    transform: rotate(90deg);
+  }
+  
+  .region-list {
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 5px;
+  }
+  
+  .region-item {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .region-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .mode-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .toggle-button {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-button.active {
+    background-color: #333;
+  }
+  
+  .toggle-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 3px;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-button.active .toggle-circle {
+    transform: translateX(25px); /* Move circle to the right */
+  }
+  .notification-menu {
+    position: absolute;
+    top: 50px; /* Adjust this value to position the menu under the bell icon */
+    right: 20px; /* Align with the bell icon */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    width: 300px; /* Adjust width as needed */
+    padding: 10px;
+  }
+  
+  .notification-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .notification-item:last-child {
+    border-bottom: none;
+  }
+  
+  .notification-item strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .notification-item p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .notification-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .notification-button:hover {
+    background-color: #218838;
+  }
+       
+  body.dark-mode .notification-button {
+    background-color: #28a745; /* Light text color for dark mode */
+    color: #fff;
+  }
+ 
+  body.dark-mode .notification-button:hover {
+    background-color: #218838; /* Light text color for dark mode */
+    
+  }
+ 
+  body.dark-mode .notification-menu {
+    color: #fff; /* Light text color for dark mode */
+    background-color: #333;
+  }
+  /* Add to your Header.css */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 16px;
+  z-index: 1000;
+}
+
+.country-search {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.country-search input {
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.country-search input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.country-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 8px;
+  padding-right: 4px;
+}
+
+.country-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.country-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.country-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.country-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.country-item:hover {
+  background: #f8fafc;
+}
+
+.country-item.selected {
+  background: #e0e7ff;
+  color: #4f46e5;
+}
+
+.country-flag {
+  width: 24px;
+  height: 16px;
+  margin-right: 12px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.region-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #f8fafc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.region-display:hover {
+  background: #f1f5f9;
+}
+
+.region-display img {
+  width: 24px;
+  height: 16px;
+  border-radius: 2px;
+}
+
+.mode-toggle {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.toggle-button {
+  width: 48px;
+  height: 24px;
+  background: #e2e8f0;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toggle-button.active {
+  background: #3b82f6;
+}
+
+.toggle-circle {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: all 0.2s;
+}
+
+.toggle-button.active .toggle-circle {
+  transform: translateX(24px);
+}
+
+.notification-menu {
+  width: 320px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 16px;
+  right: 0;
+  border-radius: 12px;
+}
+/* Add to your Header.css */
+
+.country-search {
+  position: relative;
+  padding: 8px 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.country-search input {
+  width: 100%;
+  padding: 8px 32px 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.country-search .search-icon {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+  font-size: 14px;
+}
+
+.country-list {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.country-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.country-item:hover {
+  background-color: #f8fafc;
+}
+
+.country-item.selected {
+  background-color: #e0e7ff;
+  color: #4f46e5;
+}
+
+.country-icon {
+  margin-right: 12px;
+  font-size: 16px;
+  color: #64748b;
+}
+
+.country-item.selected .country-icon {
+  color: #4f46e5;
+}
+
+.country-item span {
+  flex: 1;
+  font-size: 14px;
+}
+
+/* Scrollbar styling */
+.country-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.country-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.country-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.country-list::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+/* Add or update in your Header.css */
+
+.selected-country {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.current-country {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  font-weight: 500;
+}
+
+.change-country-btn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 16px;
+  background-color: #f8fafc;
+  border: none;
+  border-radius: 8px;
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.change-country-btn:hover {
+  background-color: #f1f5f9;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.change-country-btn.close {
+  background-color: #e2e8f0;
+  color: #64748b;
+}
+
+.change-country-btn.close:hover {
+  background-color: #cbd5e1;
+}
+
+/* Dark mode styles */
+.dark-mode .change-country-btn {
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+
+.dark-mode .change-country-btn:hover {
+  background-color: #2d3748;
+}
+
+.dark-mode .change-country-btn.close {
+  background-color: #374151;
+  color: #9ca3af;
+}
+
+.dark-mode .change-country-btn.close:hover {
+  background-color: #4b5563;
+}
+.notification-menu {
+  max-height: 400px;
+  width: 320px;
+  overflow-y: auto;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.mark-all-read {
+  background: none;
+  border: none;
+  color: #0066cc;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.notification-list {
+  padding: 0;
+}
+
+.notification-item {
+  display: flex;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-items: flex-start;
+}
+
+.notification-item:hover {
+  background-color: #f8f9fa;
+}
+
+.notification-icon {
+  margin-right: 12px;
+  color: #666;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-content strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.notification-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.notification-time {
+  font-size: 12px;
+  color: #999;
+  display: block;
+  margin-top: 4px;
+}
+
+.unread-indicator {
+  width: 8px;
+  height: 8px;
+  background-color: #0066cc;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-top: 6px;
+}
+
+.notification-item.read {
+  opacity: 0.7;
+}
+
+.notification-item.empty {
+  text-align: center;
+  color: #666;
+  cursor: default;
+}
+
+.notification-item.empty:hover {
+  background-color: transparent;
+}

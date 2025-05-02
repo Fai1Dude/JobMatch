@@ -1,0 +1,195 @@
+/* Default Light Mode */
+:root {
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --input-bg-color: #fff;
+  --input-border-color: #ccc;
+  --card-bg-color: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --button-bg-color: #e7f0ff;
+  --button-hover-bg-color: #007bff;
+  --selected-bg-color: #007bff;
+  --selected-text-color: #fff;
+  --accent-color: #0a66c2;
+  --message-bg-color: #e6ffed;
+  --message-text-color: #276749;
+}
+
+/* Dark Mode */
+.dark-mode {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --input-bg-color: #333;
+  --input-border-color: #555;
+  --card-bg-color: #1e1e1e;
+  --shadow-color: rgba(255, 255, 255, 0.1);
+  --button-bg-color: #333;
+  --button-hover-bg-color: #0056b3;
+  --selected-bg-color: #0056b3;
+  --selected-text-color: #fff;
+  --accent-color: #1a73e8;
+  --message-bg-color: #3a3f47;
+  --message-text-color: #bbd2ff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Layout Styles */
+.applicant-container {
+  display: flex;
+  gap: 347px;
+  width: auto;
+  height: auto;
+  background-color: var(--background-color);
+}
+
+.left-message {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Search bar styling */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#set {
+  align-self: center;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: var(--button-bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
+}
+
+.filter-button.selected, .filter-button:hover {
+  background-color: var(--button-hover-bg-color);
+  color: var(--selected-text-color);
+}
+
+.applicant-list {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.applicant-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  margin-bottom: 10px;
+}
+
+.avatar {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.applicant-info h4 {
+  margin: 0;
+}
+
+.applicant-time {
+  margin-left: auto;
+  font-size: 12px;
+  color: #888;
+}
+
+.schedule-interview {
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px var(--shadow-color);
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.applicant-buttons, .action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.applicant-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--button-bg-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.applicant-button.selected {
+  background-color: var(--selected-bg-color);
+  color: var(--selected-text-color);
+}
+
+.add-button {
+  padding: 8px 16px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input-date, .input-time {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+}
+
+.save-button, .send-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--message-bg-color);
+  color: var(--message-text-color);
+  border-radius: 8px;
+  text-align: center;
+}
